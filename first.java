@@ -659,10 +659,10 @@
 
 
 //15jan
-//java..
-import java.util.Scanner;
-public class first{
-             public static void main(String[] args){
+// //java..
+// import java.util.Scanner;
+// public class first{
+//              public static void main(String[] args){
                 // //String str = "hello"; //create string in string pool
                 // String str = new String("Hello");//create string in heap memory
                 // System.out.println(str);
@@ -678,18 +678,41 @@ public class first{
                 // String str3="Hello";
                 // System.out.println(str1==str3);
 
-                Scanner sc=new Scanner(System.in);
-                String str=sc.nextLine();
-                //all substrings starting from any particular index
-                for(int i=0;i<str.length();i++){
-                    for(int j=i+1;j<=str.length();j++){
-                        System.out.println(str.substring(i, j));
-                    }
-                }
-                //all substrings ending at any particular index
+            //     Scanner sc=new Scanner(System.in);
+            //     String str=sc.nextLine();
+            //     //all substrings starting from any particular index
+            //     for(int i=0;i<str.length();i++){
+            //         for(int j=i+1;j<=str.length();j++){
+            //             System.out.println(str.substring(i, j));
+            //         }
+            //     }
+            //     //all substrings ending at any particular index
 
+
+            //  }}
+
+
+
+//16 jan
+//java..
+// import java.util.Scanner;
+public class first{
+             public static void main(String[] args){
+               //  Scanner sc=new Scanner(System.in);
+               StringBuilder str=new StringBuilder("Hello");
+               //length
+               System.out.println(str.length());
+               //append
+               System.out.println(str.append(" str"));
+               System.out.println(str);
+               //char at index
+               str.charAt(2);
+               System.out.println(str.deleteCharAt(2));
+               //insert
+               str.insert(2, 'a');
+               //set char
+               str.setCharAt(2, 'a');
 
              }}
-
 
 
