@@ -696,23 +696,47 @@
 //16 jan
 //java..
 // import java.util.Scanner;
-public class first{
-             public static void main(String[] args){
-               //  Scanner sc=new Scanner(System.in);
-               StringBuilder str=new StringBuilder("Hello");
-               //length
-               System.out.println(str.length());
-               //append
-               System.out.println(str.append(" str"));
-               System.out.println(str);
-               //char at index
-               str.charAt(2);
-               System.out.println(str.deleteCharAt(2));
-               //insert
-               str.insert(2, 'a');
-               //set char
-               str.setCharAt(2, 'a');
+// public class first{
+//              public static void main(String[] args){
+//                //  Scanner sc=new Scanner(System.in);
+//                StringBuilder str=new StringBuilder("Hello");
+//                //length
+//                System.out.println(str.length());
+//                //append
+//                System.out.println(str.append(" str"));
+//                System.out.println(str);
+//                //char at index
+//                str.charAt(2);
+//                System.out.println(str.deleteCharAt(2));
+//                //insert
+//                str.insert(2, 'a');
+//                //set char
+//                str.setCharAt(2, 'a');
+//  }}
 
-             }}
+
+
+//29jan
+//dsa
+
+// import java.util.Scanner;
+// import java.util.Stack;
+//  public class first{
+//              public static void main(String[] args){
+//                 Stack<Integer>st=new Stack<>();
+//                 //these <>are template
+
+//                 st.push(10); //pushes at top of stack
+//                 st.push(20);
+//                 st.push(30);
+//                 st.push(40);
+//                 System.out.println(st.peek());//returns the top elsement
+//                 System.out.println(st.pop());//removes the top element and returns it
+//                 System.out.println(st);//prints stack in form of array
+//                 System.out.println(st.search(10));//searches from last to top nd if not found return -1
+//                 System.out.println("is stack empty?"+st.isEmpty());
+
+
+//              }}
 
 
