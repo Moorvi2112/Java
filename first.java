@@ -938,6 +938,46 @@
 
 
 
+//12 feb
+//dsa
+//aggresive cows
+
+
+//5mar
+//java
+//given a string find the first non repeating char in string
+//eg: abcacefge  c fg
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class first {
+    public static void main(String[] args) {
+        String str = "swiss";
+        Map<Character, Integer> charCount = new LinkedHashMap<>();
+
+        // Count character occurrences
+        for (char c : str.toCharArray()) {
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        }
+
+        // Find and print the first non-repeating character
+        for (char c : str.toCharArray()) {
+            if (charCount.get(c) == 1) {
+                System.out.println("First non-repeating character: " + c);
+                return;
+            }
+        }
+
+        System.out.println("No non-repeating character found.");
+    }
+}
+
+
+
+
+
+
 
 
 
