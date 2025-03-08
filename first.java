@@ -766,8 +766,180 @@
 
 
 
-//3FEB
-//java
+// if(peek()>arr[i])print (peek())
+// else{pop()until peek()<arr[i]}
+// if stack is empty print -1
+// at the end push arr[i]to the stack
+
+
+
+//4FEB
+//dsa
+// find the next greater element of each element in an array
+// import java.util.Stack;
+
+// public class first {
+//     public static int[] nextGreaterElement(int[] arr) {
+//         int n = arr.length;
+//         int[] nge = new int[n];
+//         Stack<Integer> stack = new Stack<>();
+
+//         for (int i = n - 1; i >= 0; i--) {
+//             while (!stack.isEmpty() && stack.peek() <= arr[i]) {
+//                 stack.pop();
+//             }
+            
+//             nge[i] = stack.isEmpty() ? -1 : stack.peek();
+//             stack.push(arr[i]);
+//         }
+//         return nge;
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {5, 3, 4, 9, 7, 13};
+//         int[] result = nextGreaterElement(arr);
+        
+//         System.out.println("Element -> Next Greater Element");
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.println(arr[i] + " -> " + result[i]);
+//         }
+//     }
+// }
+
+
+// import java.util.Stack;
+
+// public class first {
+//     public static void main(String[] args) {
+//find the next greater element of each element in an array
+//using brute force
+//        int[] arr = {3,2,4,7,5,9,13,11};
+//        int[] ans = new int[arr.length];
+//        for(int i = 0; i < arr.length; i++){
+//            ans[i] = -1;
+//            for(int j = i+1; j < arr.length; j++){
+//                if(arr[i]<arr[j]){
+//                    ans[i]=arr[j];
+//                    break;
+//                }
+//            }
+//        }
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.print(ans[i]+" ");
+//        }
+
+
+        //optimised approach using stack
+//        int[] arr = {5,3,4,9,7,13};
+//        int[] ans = new int[arr.length];
+//        Stack<Integer> st = new Stack<>();
+//        for(int i = arr.length - 1; i >= 0; i--) {
+//                while(!st.isEmpty() &&arr[i]>st.peek()){
+//                    st.pop();
+//                }
+//                if(!st.isEmpty()){
+//
+//                    ans[i] = st.peek();
+//                }
+//                else{
+//                    ans[i] = -1;
+//                }
+//                st.push(arr[i]);
+//
+//        }
+//        for(int i = 0; i < arr.length; i++) {
+//            System.out.print(ans[i]+" ");
+//        }
+
+
+        //Variations of Next greater Element
+        //-> Next Greater Element to the right
+        //-> Next Greater Element to the left
+        //-> Next Smaller Element to the right
+        //-> Next Smaller Element to the left
+
+        
+//     }
+// }
+
+
+
+//11feb
+//dsa
+
+
+// import java.util.Stack;
+// public class first {
+//     private class Node {
+//         int data;
+//         Node next;
+
+//         Node(int data) {
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+
+//     private Node top;
+//     private int size;
+
+//     // Constructor name updated to match the class name
+//     public first() {
+//         top = null;
+//         size = 0;
+//     }
+
+//     public void push(int item) {
+//         Node newNode = new Node(item);
+//         newNode.next = top;
+//         top = newNode;
+//         size++;
+//     }
+
+//     public int pop() {
+//         if (isEmpty()) {
+//             throw new IllegalStateException("Stack is Empty.");
+//         }
+//         int topData = top.data;
+//         top = top.next;
+//         size--;
+//         return topData;
+//     }
+
+//     public int peek() {
+//         if (isEmpty()) {
+//             throw new IllegalStateException("Stack is Empty.");
+//         }
+//         return top.data;
+//     }
+
+//     public int size() {
+//         return size;
+//     }
+
+//     public boolean isEmpty() {
+//         return top == null;
+//     }
+
+//     public void display() {
+//         Node curr = top;
+
+//         while (curr != null) {
+//             System.out.print(curr.data);
+//             curr = curr.next;
+//             if (curr != null)
+//                 System.out.print(" -> ");
+//         }
+
+//         System.out.println();
+//     }
+// }
+
+
+
+
+
+
 
 
 
