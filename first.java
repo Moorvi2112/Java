@@ -948,30 +948,97 @@
 //given a string find the first non repeating char in string
 //eg: abcacefge  c fg
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+// import java.util.LinkedHashMap;
+// import java.util.Map;
 
-public class first {
-    public static void main(String[] args) {
-        String str = "swiss";
-        Map<Character, Integer> charCount = new LinkedHashMap<>();
+// public class first {
+//     public static void main(String[] args) {
+//         String str = "swiss";
+//         Map<Character, Integer> charCount = new LinkedHashMap<>();
 
-        // Count character occurrences
-        for (char c : str.toCharArray()) {
-            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
-        }
+//         // Count character occurrences
+//         for (char c : str.toCharArray()) {
+//             charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+//         }
 
-        // Find and print the first non-repeating character
-        for (char c : str.toCharArray()) {
-            if (charCount.get(c) == 1) {
-                System.out.println("First non-repeating character: " + c);
-                return;
-            }
-        }
+//         // Find and print the first non-repeating character
+//         for (char c : str.toCharArray()) {
+//             if (charCount.get(c) == 1) {
+//                 System.out.println("First non-repeating character: " + c);
+//                 return;
+//             }
+//         }
 
-        System.out.println("No non-repeating character found.");
-    }
-}
+//         System.out.println("No non-repeating character found.");
+//     }
+// }
+
+
+
+//dsa
+//two sets
+//11 march
+
+// import java.util.ArrayList;
+// import java.util.List;
+// import java.util.Scanner;
+// public class first{
+//              public static void main(String[] args){
+//                 Scanner sc=new Scanner(System.in);
+//                 int n=sc.nextInt();
+//                 sc.close();
+
+//                 long sum = (long) n*(n+1)/2;
+
+//                 if(sum%2 !=0){
+//                         System.out.println("NO");
+//                         return;
+//                 }
+
+//                 System.out.println("YES");
+
+//         List<Integer> set1 = new ArrayList<>();
+//         List<Integer> set2 = new ArrayList<>();
+//         long target = sum / 2;
+//         long currentSum = 0;
+
+//         for (int i = n; i >= 1; i--) {
+//             if (currentSum + i <= target) {
+//                 set1.add(i);
+//                 currentSum += i;
+//             } else {
+//                 set2.add(i);
+//             }
+//         }
+
+//         System.out.println(set1.size());
+//         for (int num : set1) {
+//             System.out.print(num + " ");
+//         }
+//         System.out.println();
+
+//         System.out.println(set2.size());
+//         for (int num : set2) {
+//             System.out.print(num + " ");
+//         }
+//         System.out.println();
+        
+//         }}
+
+//java
+//18 march
+
+//import java.io.FileNotFoundException;
+//import java.io.FileReader;
+
+// public class throw_throws{
+// static void function() throws FileNotFoundException{
+//   FileReader file = new FileReader(fileName:"Test.txt");
+//}
+//
+//   public static void main(String[] args){
+//      function();
+// }}
 
 
 
