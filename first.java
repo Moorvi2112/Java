@@ -18,6 +18,7 @@
          
 //     }
 // }
+
 //dec 4
 
 // import java.util.Scanner;
@@ -69,6 +70,8 @@
 //         System.out.println(y);
 //     }
 // }
+
+
 
 //dec 9
 
@@ -1039,6 +1042,8 @@
 //   public static void main(String[] args){
 //      function();
 // }}
+
+
 
 
 
