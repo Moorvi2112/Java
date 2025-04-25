@@ -13,5 +13,6 @@ public class check_even{
         else{
             System.out.println("a is an odd number");
         }
+        sc.close();
     }
 }
