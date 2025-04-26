@@ -528,6 +528,52 @@
 // }
 
 
+//print factorial of number n
+
+// public class Main{
+//   public static int calcfactorial(int n){
+//     if(n==1|| n==0){
+//       return;
+//     }
+//     int fac_nm1=calcfactorial(n-1);
+//     int fact_n=n* fact_nm1;
+//     return fact_n;
+//   }
+//   public static void main(String[] args) {
+//     int n=5;
+//     int ans=calcfactorial(n);
+//     System.out.println(ans);
+    
+//   }
+// }
+
+
+
+//print fibonacci sequence of number n
+
+// public class Main{
+//   public static void printFib(int a,int b,int n){
+//   if(n==0){
+//         return;
+//      }
+//   int c=a+b;
+//    System.out.println(c);
+//     printFib(b,c,n-1);
+//   }
+//   public static void main(String[] args) {
+//     int a=0,b=1;
+//     System.out.println(a);
+//     System.out.println(b);
+//     int n=7;
+//     printFib(a,b,n-2);
+    
+//   }
+// }
+
+
+
+
+
 
 
 
